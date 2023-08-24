@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  top: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(0, 0, 33);
+  color: white;
+}
+
+header{
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 3px 10px 0px rgba(126, 93, 156, 0.6);
+}
+
+nav {
+  background: rgba(60, 18, 99, 0.99);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.left {
+  margin-left: 75px;
+  font-size: 2rem;
+}
+
+.btn{
+    margin-right: 5px;
+    margin-top: 20px;
+    border: 2px solid blueviolet;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.right ul {
+  display: flex;
+  justify-content: center;
+  margin-right: 75px;
+}
+
+.right ul li {
+  list-style: none;
+  margin: 0 24px;
+  cursor: pointer;
+}
+
+.right ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+}
+
+.right ul li a:hover {
+  color: rgb(206, 206, 242);
+}
+
+.right ul li a:hover::after{
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: rgb(206, 206, 242);
+  position: absolute;
+  top: 25px;
+  right: 0px;
+}
+
+.first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 75vh;
+  margin: 60px 0;
+}
+
+.first > div {
+  width: 40%;
+}
+
+.myName {
+  color: blueviolet;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+#element {
+  color: rgb(206, 206, 242);
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover{
+    background: blueviolet;
+    transform: scale(1.05);
+}
+
+.leftSection {
+  font-size: 3rem;
+}
+
+.rightSection img {
+  width: 100%;
+}
+
+main hr {
+  border: 0;
+  background: blueviolet;
+  height: 2px;
+  margin: 0px 60px 40px;
+}
+
+.second > div {
+  max-width: 92vw;
+  margin: auto;
+  margin-bottom: 100px;
+  height: 80vh;
+  border: 3px solid rgb(225, 225, 225);
+  border-radius: 10px;
+}
+
+.headings {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 100px;
+}
+
+#projects .headings{
+  margin-bottom: 50px;
+}
+
+.second h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.grey {
+  color: grey;
+}
+
+.second .horizontalBoxLine {
+  width: 70vw;
+  height: 2px;
+  background: rgb(196, 177, 214);
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.second .verticalBoxLine {
+  height: 68px;
+  width: 2px;
+  background: rgb(196, 177, 214);
+}
+
+#skills .verticalBoxLine .verticalBoxTitle {
+  color: rgb(196, 177, 214);
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 40px;
+  width: 150px;
+}
+
+#skills .verticalBoxLine .verticalBoxDesc {
+  font-size: 15px;
+  position: relative;
+  top: 50px;
+  width: 200px;
+}
+
+.imageAtTop {
+  width: 40px;
+  position: relative;
+  top: -50px;
+  left: -19px;
+}
+
+#projects .verticalBoxLine .verticalBoxTitle {
+  color: rgb(196, 177, 214);
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 45px;
+  left: 10px;
+  width: 150px;
+}
+
+#projects .verticalBoxLine .verticalBoxDesc {
+  font-size: 15px;
+  position: relative;
+  top: 50px;
+  left: 5px;
+  width: 200px;
+}
+
+#projects .verticalBoxTitle{
+  cursor: pointer;
+}
+
+#projects .verticalBoxTitle a{  
+  text-decoration: none;
+  color: rgb(196, 177, 214);
+}
+
+footer .footer {
+  max-width: 92vw;
+  margin: auto;
+  height: 30vh;
+  border: 3px solid rgb(225, 225, 225);
+  border-radius: 10px;
+}
+
+footer > div {
+  margin-bottom: 20px !important;
+}
+
+footer h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: white;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: blueviolet;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
